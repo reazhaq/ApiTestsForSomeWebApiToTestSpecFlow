@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="fluentassertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="restsharp" Version="106.11.4" />
+    <!--<PackageReference Include="SpecFlow.xUnit" Version="3.4.3" />-->
+
+    
+    <PackageReference Include="SpecRun.SpecFlow" Version="3.4.12" />
+    
+
+    
+
+    
+
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Drivers\" />
+    <Folder Include="Hooks\" />
+  </ItemGroup>
+
+</Project>
