@@ -3,8 +3,7 @@
 	As a user
 	I want to validate value returned from api call
 
-@somefeature
-Scenario: Can call the API without any error
+Scenario Outline: Can call the API without any error
 	Given steady state
 	When I pass <value> to the end-point
 	Then I see <returnValue> in response

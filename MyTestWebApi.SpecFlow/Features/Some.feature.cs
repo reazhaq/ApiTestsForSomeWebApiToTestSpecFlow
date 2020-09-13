@@ -74,18 +74,12 @@ namespace MyTestWebApi.SpecFlow.Features
         
         public virtual void CanCallTheAPIWithoutAnyError(string value, string returnValue, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "somefeature"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
+            string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("value", value);
             argumentsOfScenario.Add("returnValue", returnValue);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can call the API without any error", null, tagsOfScenario, argumentsOfScenario);
-#line 7
+#line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -105,42 +99,39 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
+#line 7
  testRunner.Given("steady state", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 8
  testRunner.When(string.Format("I pass {0} to the end-point", value), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 9
  testRunner.Then(string.Format("I see {0} in response", returnValue), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Can call the API without any error, value1", new string[] {
-                "somefeature"}, SourceLine=13)]
+        [TechTalk.SpecRun.ScenarioAttribute("Can call the API without any error, value1", SourceLine=12)]
         public virtual void CanCallTheAPIWithoutAnyError_Value1()
         {
-#line 7
+#line 6
 this.CanCallTheAPIWithoutAnyError("value1", "value1 was the param", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Can call the API without any error, blah", new string[] {
-                "somefeature"}, SourceLine=13)]
+        [TechTalk.SpecRun.ScenarioAttribute("Can call the API without any error, blah", SourceLine=12)]
         public virtual void CanCallTheAPIWithoutAnyError_Blah()
         {
-#line 7
+#line 6
 this.CanCallTheAPIWithoutAnyError("blah", "blah was the param", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Can call the API without any error, hook\'em", new string[] {
-                "somefeature"}, SourceLine=13)]
+        [TechTalk.SpecRun.ScenarioAttribute("Can call the API without any error, hook\'em", SourceLine=12)]
         public virtual void CanCallTheAPIWithoutAnyError_Hookem()
         {
-#line 7
+#line 6
 this.CanCallTheAPIWithoutAnyError("hook\'em", "hook\'em was the param", ((string[])(null)));
 #line hidden
         }
